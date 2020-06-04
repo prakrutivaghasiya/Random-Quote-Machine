@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.0/jquery-ui.min.js"></script>
+    <title>Random Quote Machine</title>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="quote-box">
+            <div class="quote-text">
+                <i class='fa fa-quote-left'></i>
+                <span id="text"></span>
+            </div>
+            <div class="quote-author">
+                - <span id="author"></span>
+            </div>
+            <div class="quote-buttons">
+                <a class="button" id="whatsapp" data-action="share/whatsapp/share" title="Share quote on whatsapp"
+                    target="_blank">
+                    <i class="fa fa-whatsapp"></i>
+                </a>
+                <a class="button" id="tweet-quote" title="Tweet this quote" target="_blank">
+                    <i class="fa fa-twitter"></i>
+                </a>
+                <button class="button" id="new-quote">New Quote</button>
+            </div>
+        </div>
+        <div class="footer">
+            By Prakruti Vaghasiya
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>

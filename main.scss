@@ -1,0 +1,88 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,500);
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    vertical-align: baseline;
+}
+div{
+    position: relative;
+    z-index: 2;
+}
+body{
+    background-color: #333;
+    color: #333;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.footer{
+    text-align: end;
+    display: block;
+    margin: 15px;
+    font-size: 0.8rem;
+    color: #fff;
+    opacity: 0.8;
+}
+
+#quote-box{
+    border-radius: 3px;
+    position: relative;
+    width: 450px;
+    padding: 40px 50px;
+    display: table;
+    background-color: #fff;
+    .quote-text{
+        i{
+            font-size: 1.7rem;
+            margin-right: 15px;
+        }
+        text-align: center;
+        width: 450px;
+        height: auto;
+        clear: both;
+        font-weight: 500;
+        font-size: 1.55rem;
+    }
+    .quote-author{
+        width: 450px;
+        height: auto;
+        clear: both;
+        padding-top: 20px;
+        font-size: 1.1rem;
+        text-align: right;
+    }
+    .quote-buttons{
+        width: 450px;
+        margin: auto;
+        display: block;
+        .button{
+            border: none;
+            border-radius: 3px;
+            color: #fff;
+            background-color: #333333;
+            outline: none;
+            font-size: 0.85rem;
+            padding: 8px 12px;
+            margin-top:30px;
+            opacity:1 ;
+            cursor:pointer;
+            &:hover {
+                opacity: 0.8;
+            }
+            &#tweet-quote, &#whatsapp{
+                margin-right: 10px;
+                float:left;
+                font-size: 1.2rem;
+            }
+            &#new-quote {
+                float: right;
+                font-size: 1rem;
+            }
+        }
+    } 
+}
