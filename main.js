@@ -40,8 +40,6 @@ const getQuote = () => {
 
     if(inIframe())
     {
-        $('#whatsapp').attr('href', 'whatsapp://send?text=' + encodeURIComponent('"' + currentQuote + '"\n - ' + currentAuthor))
-
         $('#tweet-quote').attr('href', 'https://twitter.com/intent/tweet?hashtags=quote,randomquote&text=' + encodeURIComponent('"' + currentQuote + '"\n - ' + currentAuthor));
     }
 
@@ -89,9 +87,8 @@ $(document).ready(function () {
         }
     });
 
-    $('#whatsapp').on('click', function() {
-        if(!inIframe()){
-            openURL('href', 'whatsapp://send?text=' + encodeURIComponent('"' + currentQuote + '"\n - ' + currentAuthor))
-        }
+    $('#copy-text').on('click', function() {
+        navigator.clipboard.writeText(currentQuote + '\n - ' + currentAuthor);
+        alert("Copied to clipboard");
     });
 });
